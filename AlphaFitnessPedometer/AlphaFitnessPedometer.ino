@@ -20,11 +20,11 @@ int stepCount = 0;    // total step count
 int conversionFactor = 0.045;
 
 BLEPeripheral blePeripheral;  // create a new peripheral instance
-BLEService bleService("71997188-540a-11e6-beb8-9e71128cae77");  // create a new service
+BLEService bleService("");  // create a new service
 // create led characteristic and allow remote device to read
-BLECharCharacteristic stepCountCharacteristic("806ffa42-540a-11e6-beb8-9e71128cae77", BLERead);
+BLECharCharacteristic stepCountCharacteristic("", BLERead);
 //create button characteristic and allow remote device to write
-BLECharCharacteristic buttonCharacteristic("896358c4-540a-11e6-beb8-9e71128cae77", BLEWrite);
+BLECharCharacteristic buttonCharacteristic("", BLEWrite);
 
 
 void setup()
